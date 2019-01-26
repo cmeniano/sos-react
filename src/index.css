@@ -45,9 +45,75 @@ ul {
   background: #ddd;
 }
 
+.overlay{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: #e74c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 100%;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -moz-transition-property: all;
+  -moz-transition-duration: .5s;
+  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -ms-transition-property: all;
+  -ms-transition-duration: .5s;
+  -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.overlay.closed{
+  max-height: 0;
+}
+
+.content{
+  width: 100%;
+  background: #ffffff26;
+  padding: 24px;
+}
+
+.content h1{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.content button{
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+  margin-top: 10px;
+  background: #34495e;
+  border: solid 1px #34495e;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.content input{
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
 .game {
   display: flex;
   flex-direction: row;
+  align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  text-align: center;
 }
 
 .game-info {
@@ -70,3 +136,5 @@ ul {
   color: #000;
   font-weight: bold;
 }
+
+
